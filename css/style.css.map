@@ -1,0 +1,1 @@
+{"version":3,"sources":["main-styles.scss","bodi.scss"],"names":[],"mappings":"AAAA;EACE,6BAA6B,EAAA;;ACD/B;EACE,wBAAwB,EAAA","file":"style.css","sourcesContent":["body {\r\n  background-color: yellowgreen;\r\n}","div {\r\n  background-color: yellow;\r\n}"]}
