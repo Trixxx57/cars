@@ -1,24 +1,6 @@
 a {
   display: block; }
 
-@media (min-width: 993px) {
-  .slogan-bg {
-    background: url("../image/background-top.jpg") no-repeat scroll center top #000;
-    background-size: cover;
-    width: 100%;
-    min-height: 400px; } }
-
-@media (max-width: 992px) {
-  .md-outside {
-    display: flex;
-    flex-direction: row;
-    justify-content: right; }
-  .slogan-bg {
-    background: url("../image/background-top.jpg") no-repeat scroll center top #000;
-    background-size: cover;
-    width: 100%;
-    height: 235px; } }
-
 .slogan-div {
   display: flex;
   flex-direction: row;
@@ -58,5 +40,63 @@ a {
 
 .thumb {
   padding: 5px; }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+  margin-top: 10px;
+  background-color: #4b485b;
+  color: whitesmoke; }
+  .footer a {
+    text-decoration: none;
+    color: whitesmoke; }
+
+.flex__end {
+  display: block;
+  margin-left: auto; }
+
+@media (max-width: 992px) {
+  .md-outside {
+    display: flex;
+    flex-direction: row;
+    justify-content: right; }
+    .md-outside .content-right .info-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+  .slogan-bg {
+    background: url("../image/background-top.jpg") no-repeat scroll center top #000;
+    background-size: cover;
+    width: 100%;
+    height: 235px; }
+  .flex__right {
+    display: flex;
+    justify-content: center; }
+  .flex__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center; } }
+
+@media (min-width: 993px) {
+  .slogan-bg {
+    background: url("../image/background-top.jpg") no-repeat scroll center top #000;
+    background-size: cover;
+    width: 100%;
+    min-height: 400px; }
+  .flex__right {
+    display: flex;
+    justify-content: right; }
+    .flex__right a {
+      margin-left: auto; }
+  .flex__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: start; } }
 
 /*# sourceMappingURL=style.css.map */
