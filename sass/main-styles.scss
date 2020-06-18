@@ -29,6 +29,10 @@ a {
   background-color: rgba(75, 72, 91, 0.7);
 }
 
+.header-bg--1 {
+  background-color: rgba(75, 72, 91, 1);
+}
+
 .info-div {
   display: flex;
   flex-direction: column;
@@ -38,6 +42,16 @@ a {
 }
 
                                     // START gallery
+
+
+.gallery--gal-style {
+  margin-top: 75px;
+  margin-bottom: 135px;
+  a {
+    color: black;
+    text-align: center;
+  }
+}                              
 
 .thumb img {
   -webkit-filter: grayscale(0);
@@ -72,46 +86,49 @@ a {
       text-decoration: none;
       color: whitesmoke;
   }
-  // li a {
-  //   text-align: end;
-  // }
-}
-
-.flex__end {
-  // display: flex;
-  // justify-content: end;
-  display: block;
-  margin-left: auto;
 }
 
 
-@media (max-width: 992px) {  
 
+// .flex__end {
+//   // display: block;
+//   // margin-left: auto;
+// }
+
+.flex__center {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
   .md-outside {
     display: flex;
     flex-direction: row;
     justify-content: right;
     .content-right {
-      .info-div {
+      .info-div { 
         display: flex;
         flex-direction: column;
         justify-content: center;        
+      }
     }
   }
-}
-
   .slogan-bg {
     background: url("../image/background-top.jpg") no-repeat scroll center top #000;
     background-size: cover;
     width: 100%;
     height: 235px;
   }
-
+  .gallery--gal-style {
+    margin-bottom: 320px;
+  }
   .flex__right {
     display: flex;
     justify-content: center;
   }
-
   .flex__left {
     display: flex;
     flex-direction: column;
@@ -119,12 +136,6 @@ a {
     align-items: center;
     text-align: center;
   }
-
-  // .flex__a {
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
-
 }
 
 
@@ -135,7 +146,6 @@ a {
     width: 100%;
     min-height: 400px;
   }
-
   .flex__right {
     display: flex;
     justify-content: right;
@@ -143,7 +153,6 @@ a {
       margin-left: auto;
     }
   }
-
   .flex__left {
     display: flex;
     flex-direction: column;
