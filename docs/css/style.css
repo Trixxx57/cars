@@ -22,12 +22,29 @@ a {
 .header-bg--1 {
   background-color: #4b485b; }
 
-.info-div {
+.info--index {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 20px; }
+
+.info--about {
+  margin-top: 100px;
+  margin-bottom: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.info--about-list {
+  align-self: flex-start;
+  margin-left: 20px; }
+
+.info--about-ml {
+  align-self: flex-start;
+  margin-left: 40px;
+  font-weight: 600; }
 
 .gallery--gal-style {
   margin-top: 75px;
@@ -43,6 +60,9 @@ a {
   background-color: #fff;
   border: 1px solid #ddd;
   padding: 5px; }
+
+.thumb--border-none img {
+  border: none; }
 
 .thumb img:hover {
   -webkit-filter: grayscale(1);
@@ -71,22 +91,32 @@ a {
   align-items: center;
   text-align: center; }
 
+@media (max-width: 770px) {
+  .about-us__bottom-unfixed {
+    position: relative; } }
+
+@media (max-width: 721px) {
+  .gallery--gal-style {
+    margin-bottom: 30px; } }
+
+@media (max-width: 920px) {
+  .gallery__bottom-unfixed {
+    position: relative; } }
+
 @media (max-width: 992px) {
   .md-outside {
     display: flex;
     flex-direction: row;
     justify-content: right; }
-    .md-outside .content-right .info-div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
+  .info--index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
   .slogan-bg {
     background: url("../image/background-top.jpg") no-repeat scroll center top #000;
     background-size: cover;
     width: 100%;
     height: 235px; }
-  .gallery--gal-style {
-    margin-bottom: 320px; }
   .flex__right {
     display: flex;
     justify-content: center; }
