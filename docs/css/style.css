@@ -1,3 +1,7 @@
+body {
+  background-color: #f9f9ff;
+  font-size: 1.5rem; }
+
 a {
   display: block; }
 
@@ -7,10 +11,21 @@ a {
   align-items: center;
   padding-left: 5%; }
 
+.slogan-div--contacts {
+  justify-content: center;
+  margin-bottom: 20px; }
+
 .slogan-text {
   color: darkgray;
   font-size: 35px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-left: 0; }
+
+.slogan-text--contacts {
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 55px;
+  z-index: 10; }
 
 .header-pad {
   padding-right: 10%;
@@ -46,6 +61,9 @@ a {
   margin-left: 40px;
   font-weight: 600; }
 
+.list--background {
+  background-color: #f9f9ff !important; }
+
 .gallery--gal-style {
   margin-top: 75px;
   margin-bottom: 135px; }
@@ -70,6 +88,15 @@ a {
 
 .thumb {
   padding: 5px; }
+
+.table-align {
+  text-align: center; }
+
+.contact__mb {
+  margin-bottom: 35px; }
+
+.contact__mt {
+  margin-top: 35px; }
 
 .footer {
   display: flex;
@@ -116,7 +143,23 @@ a {
     background: url("../image/background-top.jpg") no-repeat scroll center top #000;
     background-size: cover;
     width: 100%;
-    height: 235px; }
+    height: 270px; }
+  .slogan-bg--contacts {
+    width: 100%;
+    min-height: 235px; }
+    .slogan-bg--contacts::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      min-height: 270px;
+      background-color: rgba(75, 72, 91, 0.5);
+      top: 0;
+      left: 0; }
+  .slogan-text--contacts {
+    position: relative;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 55px;
+    z-index: 10; }
   .flex__right {
     display: flex;
     justify-content: center; }
@@ -129,10 +172,22 @@ a {
 
 @media (min-width: 993px) {
   .slogan-bg {
+    position: relative;
     background: url("../image/background-top.jpg") no-repeat scroll center top #000;
     background-size: cover;
     width: 100%;
     min-height: 400px; }
+  .slogan-bg--contacts {
+    width: 100%;
+    min-height: 400px; }
+    .slogan-bg--contacts::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      min-height: 400px;
+      background-color: rgba(75, 72, 91, 0.5);
+      top: 0;
+      left: 0; }
   .flex__right {
     display: flex;
     justify-content: right; }
