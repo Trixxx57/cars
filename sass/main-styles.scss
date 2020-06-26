@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 body {
   background-color: #f9f9ff;
   font-size: 1.5rem;
@@ -6,14 +10,30 @@ a {
   display: block;
 }
 
+.body-flex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
+.body-flex-nav {
+  flex: 0 0 auto;
+}
 
+.body-flex-main {
+  flex: 1 0 auto;
+}
+
+.body-flex-footer {
+  flex: 0 0 auto;
+}
 
 .slogan-div {
   display: flex;
   flex-direction: row;
+  justify-content: end;
   align-items: center;  
-  padding-left: 5%;
+  padding-right: 2%;
 }
 
 .slogan-div--contacts {
@@ -22,10 +42,12 @@ a {
 }
 
 .slogan-text {
-  color: darkgray;
+  color: #2F4F4F;
   font-size: 35px;
   text-transform: uppercase;
   padding-left: 0;
+  padding-top: 70px;
+  text-align: lef;
 }
 
 .slogan-text--contacts {
@@ -48,13 +70,14 @@ a {
   background-color: rgba(75, 72, 91, 1);
 }
 
-// .show {
-//   background-color: rgba(75, 72, 91, 1);
-// }
-
-// .navbar-toggler {
-//   background-color: red;
-// }
+.nav-image  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  a {
+    padding-bottom: 5px;
+  }
+}
 
 .info--index {
   display: flex;
@@ -66,7 +89,7 @@ a {
 
 .info--about {
   margin-top: 100px;
-  margin-bottom: 135px;
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,12 +98,14 @@ a {
 
 .info--about-list {
   align-self: flex-start;
-  margin-left: 20px;  
+  margin-left: 20px;
+  font-size: 1.2rem;  
 }
 
 .info--about-ml {
   align-self: flex-start;
   margin-left: 40px;
+  margin-bottom: 0;
   font-weight: 600;
 }
 
@@ -88,21 +113,11 @@ a {
   background-color: #f9f9ff !important;
 }
 
-// Make menu color lighter
-// .color-header a {
-//   color: rgba(255,255,255,.8) !important;  
-// }
-
-// .color-header .active a {
-//   color: rgba(255,255,255,1) !important;
-// }
-
                                     // START gallery
-
 
 .gallery--gal-style {
   margin-top: 75px;
-  margin-bottom: 135px;
+  margin-bottom: 0;
   a {
     color: black;
     text-align: center;
@@ -129,6 +144,10 @@ a {
 
 .thumb {
   padding: 5px;
+}
+
+.gallery-title {
+  text-align: center;
 }
                                   // END gallery
 
@@ -160,17 +179,13 @@ a {
   }
 }
 
-
-
-// .flex__end {
-//   // display: block;
-//   // margin-left: auto;
+// .footer-gallery {
+//   flex: 0 0 auto;
 // }
 
 .flex__center {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
   text-align: center;
 }
@@ -200,23 +215,13 @@ a {
   .md-outside {
     display: flex;
     flex-direction: row;
-    justify-content: right;
-    // .content-right {
-    //   // .info--index { 
-    //   //   display: flex;
-    //   //   flex-direction: column;
-    //   //   justify-content: center;        
-    //   // }
-    // }
+    justify-content: right;   
   }
   .info--index { 
     display: flex;
     flex-direction: column;
     justify-content: center;        
-  }
-  // .info--about {
-  //   margin-bottom: 420px;
-  // }
+  }  
 
   .slogan-bg {
     background: url("../image/background-top.jpg") no-repeat scroll center top #000;
@@ -259,7 +264,6 @@ a {
   }
 }
 
-
 @media (min-width: 993px) {
   .slogan-bg {
     position: relative;
@@ -290,10 +294,10 @@ a {
       margin-left: auto;
     }
   }
+
   .flex__left {
     display: flex;
     flex-direction: column;
     justify-content: start;    
-  }
-  
+  }  
 }
