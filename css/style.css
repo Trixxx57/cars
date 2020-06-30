@@ -190,7 +190,7 @@ a {
   .slogan-text--contacts {
     position: relative;
     color: rgba(255, 255, 255, 0.2);
-    font-size: 55px;
+    font-size: 40px;
     z-index: 10; }
   .flex__right {
     display: flex;

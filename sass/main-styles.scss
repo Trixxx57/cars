@@ -6,6 +6,7 @@ body {
   background-color: #f9f9ff;
   font-size: 1.5rem;
 }
+
 a {
   display: block;
 }
@@ -179,10 +180,6 @@ a {
   }
 }
 
-// .footer-gallery {
-//   flex: 0 0 auto;
-// }
-
 .flex__center {
   display: flex;
   flex-direction: column;
@@ -207,9 +204,6 @@ a {
     position: relative;
   }
 }
-
-
-
 
 @media (max-width: 992px) {
   .md-outside {
@@ -247,7 +241,7 @@ a {
   .slogan-text--contacts {
     position: relative;
     color: rgba(255, 255, 255, 0.2);
-    font-size: 55px;
+    font-size: 40px;
     z-index: 10;
   }
 
