@@ -3,7 +3,7 @@ html {
 
 body {
   background-color: #f9f9ff;
-  font-size: 1.5rem; }
+  font-size: 1.4rem; }
 
 a {
   display: block; }
@@ -48,8 +48,8 @@ a {
   z-index: 10; }
 
 .header-pad {
-  padding-right: 10%;
-  padding-left: 10%; }
+  padding-right: 2%;
+  padding-left: 2%; }
 
 .header-bg {
   background-color: rgba(75, 72, 91, 0.7); }
@@ -63,6 +63,11 @@ a {
   justify-content: center; }
   .nav-image a {
     padding-bottom: 5px; }
+
+@media (max-width: 991.98px) {
+  .overf {
+    overflow: auto;
+    max-height: 200px; } }
 
 .navbar-nav li:hover > ul.dropdown-menu {
   display: block; }
@@ -93,7 +98,12 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: start; }
+  .info--about h1 {
+    align-self: center;
+    text-align: center; }
+  .info--about p {
+    text-align: justify; }
 
 .info--about-list {
   align-self: flex-start;
@@ -104,7 +114,15 @@ a {
   align-self: flex-start;
   margin-left: 40px;
   margin-bottom: 0;
-  font-weight: 600; }
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.list-group {
+  margin-bottom: 20px; }
+
+.list-group-item {
+  padding: 0.75rem 0.5rem; }
 
 .list--background {
   background-color: #f9f9ff !important; }
