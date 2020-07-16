@@ -197,6 +197,8 @@ a {
     position: relative; } }
 
 @media (max-width: 992px) {
+  .info--about p {
+    text-align: start; }
   .md-outside {
     display: flex;
     flex-direction: row;
